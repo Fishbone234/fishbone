@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iris Biometric System Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="system">
+
+  <!-- Login Section -->
+  <div id="loginSection">
+    <h1>User Login</h1>
+    <p class="intro">Please log in to access the iris biometric system.</p>
+
+    <input type="text" id="username" placeholder="Username">
+    <button onclick="login()">Login</button>
+
+    <p id="loginStatus"></p>
+  </div>
+
+  <!-- Iris System Section -->
+  <div id="irisSection" style="display:none;">
+
+    <h1>Iris Biometric Authentication System</h1>
+    <p class="intro">
+      This prototype demonstrates a simulated iris-based biometric system.
+    </p>
+
+    <!-- Registration -->
+    <div class="section">
+      <h2>1. Iris Registration</h2>
+      <div class="scanner">
+        <div class="iris"></div>
+        <p>Align your eye with the scanner</p>
+      </div>
+      <button onclick="registerIris()">Register Iris</button>
+      <p id="registerStatus"></p>
+    </div>
+
+    <!-- Verification -->
+    <div class="section">
+      <h2>2. Identity Verification</h2>
+      <button onclick="verifyIris()">Verify Identity</button>
+      <p id="verifyStatus"></p>
+    </div>
+
+    <div class="info">
+      <h3>System Overview</h3>
+      <p>
+        Iris recognition identifies individuals based on unique iris patterns.
+        This system simulates user login, iris enrollment, and identity verification.
+      </p>
+    </div>
+
+    <p class="disclaimer">
+      * This is a simulated system. No real biometric data is collected.
+    </p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
